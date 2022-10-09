@@ -1,0 +1,19 @@
+- This is an Amazon scrapper api.
+- This allows users to get data from amazon including product, prices, sales rank and reviews in JSON format
+- Dependencies for dev: nodejS,
+- npm init -y: To generate package.son
+- Start script: "start": "node index.js"
+- dev script: "dev":"nodemon index.js"
+- Remember that request-promise package depends on requests library so have that installed before running npm install start after writing your index.js code
+- We sign up and get scraper api from scraperapi.com
+
+- To get the product ID of an amazon product, check the url. The pprocust ID comes after "dp". Eg: https://www.amazon.com/Redragon-S101-Keyboard-Ergonomic-Programmable/dp/B00NLZUM36/
+
+- After we created our api routes, we decided to publish to the net but we decided that everyone that wants to use the api should get their own api keys so we removed our our key and created a function to allow users enter their own api keys.
+
+- In order to allow people to add their api keys before using our api, we will add a parameter at the beginning of our endpoints
+- to host on herocu, first create a free account or paid one. Go to your account and add new app. Then install Heroku cli via npm or via installer provided on the installation page.
+- Close and restart your terminal or vscode and check with heroku -v to be sure it was installed..
+- The rest of the steps are found here: https://dashboard.heroku.com/apps/greenamazonscraperapi/deploy/heroku-git
+- add your node_modules and anything else to ignore before doing git add
+- Follow the other instructions to add deploy your api
